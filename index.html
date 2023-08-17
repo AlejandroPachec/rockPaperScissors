@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Rock Paper Scissors</title>
 </head>
-<body style="background-color: rgb(88, 88, 88);">
+<body>
     <h1>Rock Paper Scissors</h1>
-    <section>
-        <img src="assets/img/papel.png" width="400px">
-        <img src="assets/img/rock.png" alt="">
-        <img src="assets/img/tijera.png" alt="">
+    <section class="choices">
+        <button class="choiceButton"><img src="assets/img/papel.png" alt="Paper" class="choiceImage" onclick="userOption('paper')"></button>
+        <button class="choiceButton"><img src="assets/img/rock.png" alt="Rock" class="choiceImage" onclick="userOption('rock')"></button>
+        <button class="choiceButton"><img src="assets/img/tijera.png" alt="Scissors" class="choiceImage" onclick="userOption('scissors')"></button>
     </section>
-    <button class="animated-button" onclick="play()">
+    <button class="animated-button" onclick="playRound()">
         <span>Start Game</span>
         <span></span>
-      </button>
+    </button>
+    <button class="animated-button" onclick="resetScores()">
+        <span>Restart scores</span>
+        <span></span>
+    </button>
 
- <script src="piedra-papel-tijera.js"></script>
+ <script src="rock-paper-scissors.js"></script>
 </body>
 </html>
